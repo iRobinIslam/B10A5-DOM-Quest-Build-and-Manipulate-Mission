@@ -4,8 +4,68 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Donate Bangladesh</title>
+        <!-- Lexend Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        
+        <!-- font awesome cdn -->
+        <script src="https://kit.fontawesome.com/852dbc555e.js" crossorigin="anonymous"></script>
+    
+        <!-- daisyUI cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- customize tailwind -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary : '#B4F461',
+                        },
+                        fontFamily : {
+                            Lexend :'Lexend', 
+                        },
+                    },
+                },
+    
+            }
+        </script>
     </head>
-<body>
-
+<body class="fon-Lexend mx-auto scroll-smooth">
+       <!-- Header Section Start  -->
+    <header class="sticky top-0 bg-gray-50 pb-1">
+      <!-- NavBar Start -->
+      <nav class="flex justify-between items-center sm:px-2 lg:px-20 py-6 relative bg-[#F9F7F3]">
+          <div>
+            <a href="blog.html">
+              <button id="blog" class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Blog</button>
+            </a>
+              
+          </div>
+          <div class="flex items-center justify-center ">
+              <img src="./assets/logo.png" alt="logo">
+              <h3 class="text-md font-bold">Donate Bangladesh</h3>
+          </div>
+          <div class="flex items-center justify-center ">
+              <img src="./assets/coin.png" alt="coin">
+              &nbsp;
+              <h4 id="balance">5900.00</h4>
+              <h4>&nbsp;BDT</h4>
+          </div>
+      </nav>
+      <!-- NavBar End -->
+      <!-- Button Part Start -->
+      <div class="flex justify-center gap-3  mt-5 mb-5">
+        <div>
+          <button id="donate" class="bg-primary px-8 py-3 rounded-lg text-black font-semibold">Donation</button>
+        </div>
+        <div>
+          <button id="history" class="border-2 border-solid px-8 py-3 rounded-lg text-gray-600 font-semibold">History</button>
+        </div>
+      </div>
+      <!-- Button Part End -->
+  </header>
+  <!-- Header Section End -->
 </body>
 </html>
